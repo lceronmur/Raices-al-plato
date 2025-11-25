@@ -56,7 +56,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: flex-start;
-    padding: 60px 80px;
+    padding: 10px 30px;
     gap: 80px;
 }
 
@@ -163,9 +163,16 @@ body {
     border-radius: 16px;
 }
 
+.dog-big
+{
+   display: flex;
+   justify-self: center;
+}
+
 .dog-sticker {
     width: 160px;
     margin-top: 15px;
+    margin-left: 130px;
 }
 
 .descripcion {
@@ -178,7 +185,7 @@ body {
 }
 
 .descripcion p {
-    font-size: 17px;
+    font-size: 30px;
     line-height: 1.7;
     color: #000;
     text-align: justify;
@@ -231,7 +238,6 @@ body {
    DESCRIPCIÓN FINAL
 =========================== */
 .descripcion-final {
-    padding: 80px 70px;
     background-color: #f5efe6;
 }
 
@@ -240,6 +246,8 @@ body {
     color: #8b2e1f;
     font-weight: 800;
     margin-bottom: 40px;
+    display: flex;
+    justify-self: center;
 }
 
 .descripcion-content {
@@ -254,12 +262,13 @@ body {
     height: 260px;
     border-radius: 50%;
     border: 18px solid #543425;
+    margin-right: 150px;
     object-fit: cover;
 }
 
 .descripcion-content p {
     width: 520px;
-    font-size: 17px;
+    font-size: 30px;
     line-height: 1.7;
     color: #000;
     text-align: justify;
@@ -290,7 +299,7 @@ body {
 =========================== */
 .lugares {
     background-color: #f5e7cf;
-    padding: 80px 60px;
+    padding: 40px 60px;
 }
 
 .lugares h2 {
@@ -338,8 +347,8 @@ body {
 }
 
 .tarjeta .btn-link {
-    display: inline-block;
-    margin-top: 10px;
+    display: flex;
+    justify-content: center;
     background: #4a2d22;
     color: #fff;
     padding: 10px 14px;
