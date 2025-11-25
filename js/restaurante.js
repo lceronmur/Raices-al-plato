@@ -6,7 +6,7 @@ async function cargarRestaurante() {
     return;
   }
 
-  const resp = await fetch("/data/restaurantes.json");
+  const resp = await fetch("data/restaurantes.json");
   const data = await resp.json();
   const rest = data.find(r => r.id === id);
 
@@ -36,7 +36,7 @@ async function cargarRestaurante() {
   const galeria = document.getElementById("galeria-grid");
   galeria.innerHTML = "";
   (rest.galeria || []).forEach(img => {
-    const src = img.startsWith("http") ? img : `/imagenes/${img}`;
+    const src = img.startsWith("http") ? img : `imagenes/${img}`;
     galeria.innerHTML += `<img src="${src}" alt="Foto de ${rest.nombre}">`;
   });
 

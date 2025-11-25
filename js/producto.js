@@ -9,7 +9,7 @@ async function cargarProducto() {
   }
 
   // 2. Cargar base de datos JSON
-  const response = await fetch("/data/productos.json");
+  const response = await fetch("data/productos.json");
   const data = await response.json();
 
   const producto = data[item];
@@ -46,12 +46,12 @@ async function cargarProducto() {
   const ytPlayer = document.getElementById("product-yt");
   const playButton = videoOverlay.querySelector(".play-btn");
 
-  const poster = "/imagenes/" + (producto.video?.poster || producto.imagenes.video_thumb);
+  const poster = "imagenes/" + (producto.video?.poster || producto.imagenes.video_thumb);
   videoThumb.src = poster;
 
   const videoSrc = producto.video?.src;
   const resolvedVideoSrc = videoSrc
-    ? (videoSrc.startsWith("http") ? videoSrc : `/videos/${videoSrc}`)
+    ? (videoSrc.startsWith("http") ? videoSrc : `videos/${videoSrc}`)
     : null;
 
   const getYouTubeId = (url) => {
@@ -107,10 +107,10 @@ async function cargarProducto() {
     playButton.innerText = "Sin video";
   }
 
-  document.getElementById("img1").src = "/imagenes/" + producto.imagenes.img1;
-  document.getElementById("img2").src = "/imagenes/" + producto.imagenes.img2;
-  document.getElementById("dog1").src = "/imagenes/" + producto.imagenes.dog1;
-  document.getElementById("dog2").src = "/imagenes/" + producto.imagenes.dog2;
+  document.getElementById("img1").src = "imagenes/" + producto.imagenes.img1;
+  document.getElementById("img2").src = "imagenes/" + producto.imagenes.img2;
+  document.getElementById("dog1").src = "imagenes/" + producto.imagenes.dog1;
+  document.getElementById("dog2").src = "imagenes/" + producto.imagenes.dog2;
 
   // ingredientes
   const ul = document.getElementById("lista-ingredientes");
@@ -126,7 +126,7 @@ async function cargarProducto() {
     const enlace = l.restauranteId ? `<a class="btn-link" href="/restaurante.html?id=${l.restauranteId}">Ver más</a>` : "";
     tarjetas.innerHTML += `
         <div class="tarjeta">
-            <img src="/imagenes/${l.img}">
+            <img src="imagenes/${l.img}">
             <h3>${l.nombre}</h3>
             <p>${l.direccion}</p>
             ${enlace}
