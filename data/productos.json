@@ -176,19 +176,19 @@
     "ingredientes": ["Cerdo", "Arroz", "Arvejas", "Cebolla larga", "Ajo", "Especias", "Sal", "Comino", "Cuero crocante"],
     "descripcion": "El cerdo se rellena con arroz, arveja y condimentos, y luego se hornea lentamente hasta lograr una piel crujiente y una carne suave y jugosa. Es uno de los platos más tradicionales de las festividades colombianas y un infaltable en reuniones familiares.",
     "video": {
-      "src": "https://cdn.coverr.co/videos/coverr-adding-the-sauce-to-the-pasta-8492/1080p.mp4",
-      "poster": "ajiaco1.png"
+      "src": "https://www.youtube.com/watch?v=ZuAj7wNgW_4",
+      "poster": "lechona1.jpg"
     },
     "imagenes": {
-      "video_thumb": "ajiaco1.png",
-      "img1": "ajiaco2.png",
-      "img2": "ajiaco3.png",
-      "dog1": "perrito1.png",
-      "dog2": "perrito2.png"
+      "video_thumb": "lechona2.jpg",
+      "img1": "lechona2.jpg",
+      "img2": "lechona3.jpg",
+      "dog1": "perroalalado.png",
+      "dog2": "perrofooter.png"
     },
     "lugares": [
       {
-        "img": "lugar1.png",
+        "img": "ricalechona1.jpg",
         "nombre": "Rica Lechona",
         "direccion": "Cl. 27 Sur #12J-12, Bogotá",
         "restauranteId": "lechona-rica"
@@ -203,21 +203,21 @@
     "ingredientes": ["Arroz (o Yuca)", "Agua", "Azúcar o panela", "Canela",  "Clavos de olor (Opcional)"],
     "descripcion": "El arroz se cocina y se mezcla con panela, dejando que fermente durante varias horas o días. El resultado es una bebida espesa, dulce y ligeramente ácida. Es muy consumida en festividades locales y reuniones familiares.",
     "video": {
-      "src": "https://cdn.coverr.co/videos/coverr-adding-the-sauce-to-the-pasta-8492/1080p.mp4",
-      "poster": "ajiaco1.png"
+      "src": "https://www.youtube.com/watch?v=ivRfYHeGAYA",
+      "poster": "masato1.jpg"
     },
     "imagenes": {
-      "video_thumb": "ajiaco1.png",
-      "img1": "ajiaco2.png",
-      "img2": "ajiaco3.png",
-      "dog1": "perrito1.png",
-      "dog2": "perrito2.png"
+      "video_thumb": "masato3.gif",
+      "img1": "masato.png",
+      "img2": "masato2.jpeg",
+      "dog1": "perroalalado.png",
+      "dog2": "perrofooter.png"
     },
     "lugares": [
       {
-        "img": "lugar1.png",
-        "nombre": "Masato Artesanal",
-        "direccion": "Cra 46 #134a-14, Suba, Bogotá.",
+        "img": "wasato1.webp",
+        "nombre": "Wasato Artesanal",
+        "direccion": "Cl. 147 #101-56, Bogotá",
         "restauranteId": "masato-artesanal"
       }
     ]
@@ -230,19 +230,19 @@
     "ingredientes": ["Agua de panela", "Canela", "Clavos", "Aguardiente"],
     "descripcion": "Se hierve agua con canela y panela para crear una infusión dulce y especiada. Luego se le añade aguardiente para darle calor y carácter alcohólico. El resultado es una bebida dulce, caliente y reconfortante, perfecta para clima frío andino.",
     "video": {
-      "src": "https://cdn.coverr.co/videos/coverr-adding-the-sauce-to-the-pasta-8492/1080p.mp4",
-      "poster": "ajiaco1.png"
+      "src": "https://www.youtube.com/watch?v=VLRPLDzky_8&t=19s",
+      "poster": "canelazo1.jpg"
     },
     "imagenes": {
-      "video_thumb": "ajiaco1.png",
-      "img1": "ajiaco2.png",
-      "img2": "ajiaco3.png",
-      "dog1": "perrito1.png",
-      "dog2": "perrito2.png"
+      "video_thumb": "canelazo.png",
+      "img1": "canelazo2.jpg",
+      "img2": "canelazo3.webp",
+      "dog1": "perroalalado.png",
+      "dog2": "perrofooter.png"
     },
     "lugares": [
       {
-        "img": "lugar1.png",
+        "img": "fogata.jpg",
         "nombre": "Fogatas Mirador D.C",
         "direccion": "kilómetro 4.5 de la vía a La Calera, entrando por Holiwood",
         "restauranteId": "fogatas-mirador-dc"
@@ -257,19 +257,19 @@
     "ingredientes": ["Carne (res, cerdo, pollo)", "Verduras", "Papa", "Mazorca", "Plátano"],
     "descripcion": "Todos los ingredientes se cocinan lentamente hasta que las carnes y verduras sueltan su sabor. Se sirve en dos pasos: primero el caldo y luego los vegetales y carnes acompañados con hogao. Es un plato muy nutritivo y típico de los almuerzos bogotanos tradicionales.",
     "video": {
-      "src": "https://cdn.coverr.co/videos/coverr-adding-the-sauce-to-the-pasta-8492/1080p.mp4",
-      "poster": "ajiaco1.png"
+      "src": "https://www.youtube.com/watch?v=XgZlwGBsy7A",
+      "poster": "puchero1.jpg"
     },
     "imagenes": {
-      "video_thumb": "ajiaco1.png",
-      "img1": "ajiaco2.png",
-      "img2": "ajiaco3.png",
-      "dog1": "perrito1.png",
-      "dog2": "perrito2.png"
+      "video_thumb": "puchero2.webp",
+      "img1": "puchero3.jpeg",
+      "img2": "puchero4.jpg",
+      "dog1": "perroalalado.png",
+      "dog2": "perrofooter.png"
     },
     "lugares": [
       {
-        "img": "lugar1.png",
+        "img": "doñaelvira1.webp",
         "nombre": "Doña Elvira",
         "direccion": "Cl. 50 #20-26, Bogotá",
         "restauranteId": "doña-elvira"
@@ -284,19 +284,19 @@
     "ingredientes": ["Avena", "Leche o agua", "Azúcar o panela", "Canela"],
     "descripcion": "Se cocina la avena con agua o leche hasta obtener una textura cremosa, luego se endulza (si se quiere) y se aromatiza con canela o vainilla. Puede servirse caliente para dar confort o fría como bebida refrescante y nutritiva.",
     "video": {
-      "src": "https://cdn.coverr.co/videos/coverr-adding-the-sauce-to-the-pasta-8492/1080p.mp4",
-      "poster": "ajiaco1.png"
+      "src": "https://www.youtube.com/watch?v=zO3yTlPHLJo",
+      "poster": "avena1.jpg"
     },
     "imagenes": {
-      "video_thumb": "ajiaco1.png",
-      "img1": "ajiaco2.png",
-      "img2": "ajiaco3.png",
-      "dog1": "perrito1.png",
-      "dog2": "perrito2.png"
+      "video_thumb": "avena1.jpg",
+      "img1": "avena2.jpg",
+      "img2": "avena3.jpg",
+      "dog1": "perroalalado.png",
+      "dog2": "perrofooter.png"
     },
     "lugares": [
       {
-        "img": "lugar1.png",
+        "img": "pandebonitos1.jpg",
         "nombre": "Pandebonitos de la Virgen",
         "direccion": "Calle 19 # 25-04 - Local 80212, Av. Ciudad de Lima, Bogotá",
         "restauranteId": "pandebonitos"
@@ -311,19 +311,19 @@
     "ingredientes": ["Panela", "Agua", "Limón (Opcional)", "Queso (Opcional)", "Canela (Opcional)"],
     "descripcion": "Se disuelve la panela en agua caliente hasta que se integra por completo; luego se puede servir caliente (muy reconfortante) o enfriada con hielo. Si se añade limón (o lima) adquiere un toque cítrico, y con canela o especias se vuelve aún más aromática.En regiones frías, es común acompañarla con queso fresco (alguien lo deja derretir dentro de la bebida) según la tradición.",
     "video": {
-      "src": "https://cdn.coverr.co/videos/coverr-adding-the-sauce-to-the-pasta-8492/1080p.mp4",
-      "poster": "ajiaco1.png"
+      "src": "https://www.youtube.com/watch?v=r4Pb_6s0QHY",
+      "poster": "aguapanela1.jpg"
     },
     "imagenes": {
-      "video_thumb": "ajiaco1.png",
-      "img1": "ajiaco2.png",
-      "img2": "ajiaco3.png",
-      "dog1": "perrito1.png",
-      "dog2": "perrito2.png"
+      "video_thumb": "aguapanela2.jpeg",
+      "img1": "aguapanela3.jpg",
+      "img2": "aguapanela4.jpg",
+      "dog1": "perroalalado.png",
+      "dog2": "perrofooter.png"
     },
     "lugares": [
       {
-        "img": "lugar1.png",
+        "img": "florida2.jpg",
         "nombre": "Pastelería La Florida",
         "direccion": "Cra. 7 #21-46, Bogotá",
         "restauranteId": "pasteleria-la-florida"
