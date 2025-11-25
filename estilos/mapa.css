@@ -1,0 +1,275 @@
+body {
+    margin: 0;
+    background: #eaddc4;
+    font-family: 'Poppins', sans-serif;
+}
+
+.zona-container {
+    width: 100%;
+    padding: 30px 0 10px;
+    text-align: center;
+}
+
+.title {
+    font-size: 48px;
+    margin-bottom: 10px;
+    color: #4b1f14;
+    font-weight: 900;
+}
+
+.title-sec {
+    font-size: 36px;
+    text-align: center;
+    color: #4b1f14;
+}
+
+.sub {
+    margin: 0 auto 18px;
+    color: #5c4030;
+    text-align: center;
+}
+
+.contenido {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 80px;
+}
+
+.mapa {
+    position: relative;
+    width: 700px;
+    height: auto;
+}
+
+.mapa img {
+    width: 100%;
+    height: auto;
+}
+
+.mapa-puntos {
+    position: absolute;
+    inset: 0;
+}
+
+.punto {
+    position: absolute;
+    width: 42px;
+    height: 42px;
+    border-radius: 50%;
+    border: 3px solid #4b1f14;
+    transform: translate(-50%, -50%);
+    cursor: pointer;
+    box-shadow: 0 6px 12px rgba(0,0,0,0.2);
+    transition: transform 0.1s ease, box-shadow 0.1s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-size: 70%;
+    background-position: center;
+    background-repeat: no-repeat;
+    font-size: 20px;
+    color: #fff;
+}
+
+.punto:hover {
+    transform: translate(-50%, -50%) scale(1.05);
+    box-shadow: 0 10px 18px rgba(0,0,0,0.25);
+}
+
+.punto-comida {
+    background: #ff8b3e;
+}
+
+.punto-bebida {
+    background: #3f92e5;
+}
+
+@media (max-width: 700px) {
+    .punto {
+        width: 34px;
+        height: 34px;
+        font-size: 16px;
+    }
+}
+
+/* Botones zona */
+.botones {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 18px;
+}
+
+.botones button {
+    width: 220px;
+    padding: 15px 0;
+    background: #ff8b3e;
+    border: none;
+    border-radius: 40px;
+    font-size: 32px;
+    font-weight: 700;
+    cursor: pointer;
+    color: #4b1f14;
+    transition: .2s;
+}
+
+.botones button:hover {
+    transform: scale(1.05);
+}
+
+.botones button.activo {
+    background: #c25b1d;
+    color: #fff;
+}
+
+.filtros-panel {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+    margin: 10px auto 30px;
+    padding: 0 24px;
+}
+
+.filtros-resumen {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.tag {
+    background: #4b1f14;
+    color: #fff;
+    padding: 8px 14px;
+    border-radius: 999px;
+    font-size: 14px;
+    text-transform: capitalize;
+}
+
+.boton-reset {
+    background: #fff;
+    border: 2px solid #4b1f14;
+    color: #4b1f14;
+    padding: 10px 16px;
+    border-radius: 12px;
+    cursor: pointer;
+    font-weight: 700;
+}
+
+.restaurantes-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 18px;
+    padding: 0 28px 40px;
+}
+
+.detalle {
+    margin: 18px auto 0;
+    max-width: 720px;
+    background: #fff;
+    border-radius: 18px;
+    padding: 16px;
+    border: 3px solid #f0c8a2;
+    box-shadow: 0 8px 15px rgba(0,0,0,0.08);
+    text-align: left;
+}
+
+.detalle-nombre {
+    font-weight: 800;
+    color: #4b1f14;
+    font-size: 20px;
+}
+
+.detalle-meta,
+.detalle-dir,
+.detalle-momentos {
+    margin: 6px 0;
+    color: #4b1f14;
+}
+
+.card {
+    background: #fff;
+    border-radius: 18px;
+    padding: 18px;
+    border: 3px solid #f0c8a2;
+    box-shadow: 0 8px 15px rgba(0,0,0,0.08);
+}
+
+.card-title {
+    font-weight: 800;
+    color: #4b1f14;
+    font-size: 18px;
+    margin-bottom: 8px;
+}
+
+.card-meta {
+    display: flex;
+    gap: 8px;
+    margin-bottom: 6px;
+}
+
+.badge {
+    background: #ff8b3e;
+    color: #4b1f14;
+    padding: 6px 10px;
+    border-radius: 12px;
+    font-weight: 700;
+    font-size: 12px;
+    text-transform: capitalize;
+}
+
+.card-dir,
+.card-momentos,
+.card-tip {
+    margin: 4px 0;
+    color: #4b1f14;
+    font-size: 14px;
+}
+
+.card-tip {
+    color: #c25b1d;
+    font-weight: 700;
+}
+
+.card-actions {
+    margin-top: 10px;
+}
+
+.btn-link {
+    display: inline-block;
+    background: #4b1f14;
+    color: #fff;
+    padding: 10px 14px;
+    border-radius: 10px;
+    text-decoration: none;
+    font-weight: 700;
+    border: 2px solid #4b1f14;
+}
+
+.btn-link:hover {
+    background: #fff;
+    color: #4b1f14;
+}
+
+.empty {
+    text-align: center;
+    color: #4b1f14;
+    background: #fff;
+    padding: 20px;
+    border-radius: 14px;
+    margin: 0 28px 40px;
+    border: 2px dashed #c25b1d;
+}
+
+@media (max-width: 1000px) {
+    .contenido {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .mapa {
+        width: 90%;
+    }
+}

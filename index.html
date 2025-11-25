@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Raíces al plato</title>
+
+  <link rel="stylesheet" href="/estilos/header.css" />
+  <link rel="stylesheet" href="/estilos/principal.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+  <header>
+    <div class="titulo">
+      <h1>Raíces al plato</h1>
+    </div>
+
+    <div class="logo">
+      <img src="/imagenes/logo.png" alt="Logo Raíces al Plato" />
+    </div>
+
+    <nav>
+      <button onclick="irA('mapa.html')">Mapa</button>
+      <button onclick="irA('menu.html')">Menú</button>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <div class="hero-texto">
+      <h1>Duki te invita a<br><span>probar lo típico</span></h1>
+      <div class="boton-wrap">
+  <button class="boton" onclick="location.href='encuesta.html'">
+  <span>Guía Inicial</span>
+</button>
+</div>
+    </div>
+
+    <div class="hero-img">
+      <img src="/imagenes/perroprincipal 1.png" alt="Duki el perrito guía">
+    </div>
+  </section>
+
+</body>
+</html>
+
+<script>
+  function irA(ruta) {
+    window.location.href = ruta;
+  }
+</script>

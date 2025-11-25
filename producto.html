@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title id="producto-title">Raíces al plato</title>
+  
+  <link rel="stylesheet" href="/estilos/header.css" />
+  <link rel="stylesheet" href="/estilos/changua.css" />
+</head>
+
+<body>
+
+<header>
+  <div class="titulo"><h1>Raíces al plato</h1></div>
+  <div class="logo">
+      <a href="index.html">
+        <img src="/imagenes/logo.png" alt="Logo Raíces al Plato">
+      </a>
+    </div>
+  <nav>
+    <button onclick="irA('mapa.html')">Mapa</button>
+    <button onclick="irA('menu.html')">Menú</button>
+  </nav>
+</header>
+
+<div class="pagina-producto">
+
+    <div class="breadcrumb">
+        <button class="volver" onclick="history.back()">Volver</button>
+        <span id="breadcrumb"></span>
+    </div>
+
+    <section class="intro">
+        <div class="titulo-video">
+            <h2 id="titulo-producto"></h2>
+
+            <div class="video-card" id="video-card">
+                <video id="product-video" class="video-player" playsinline preload="none"></video>
+                <iframe id="product-yt" class="video-player video-player--yt" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <div class="video-overlay" id="video-overlay">
+                    <img id="video-thumb" class="video-img">
+                    <div class="play-btn">&#9654;</div>
+                </div>
+            </div>
+
+            <img id="dog1" class="dog-sticker">
+        </div>
+
+        <div class="descripcion">
+            <h2>¿Qué es?</h2>
+            <p id="texto-que-es"></p>
+        </div>
+    </section>
+
+    <section class="ingredientes">
+        <div>
+            <h2>Ingredientes</h2>
+            <ul id="lista-ingredientes"></ul>
+        </div>
+
+        <img id="img1" class="img-rounded">
+    </section>
+
+    <section class="descripcion-final">
+        <h2>Descripción</h2>
+
+        <div class="descripcion-content">
+            <img id="img2" class="img-gear">
+            <p id="texto-descripcion"></p>
+        </div>
+
+        <img id="dog2" class="dog-big">
+    </section>
+
+    <section class="lugares">
+        <h2>Nuestros lugares recomendados</h2>
+        <div class="tarjetas" id="tarjetas-lugares"></div>
+    </section>
+
+</div>
+
+<script src="/js/producto.js"></script>
+</body>
+</html>
+<script>
+  function irA(ruta) {
+    window.location.href = ruta;
+  }
+</script>

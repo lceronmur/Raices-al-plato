@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Guía inicial - Raíces al plato</title>
+  <link rel="stylesheet" href="/estilos/header.css">
+  <link rel="stylesheet" href="/estilos/encuesta.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <div class="titulo">
+      <h1>Raíces al plato</h1>
+    </div>
+    <div class="logo">
+      <a href="index.html">
+        <img src="/imagenes/logo.png" alt="Logo Raíces al Plato">
+      </a>
+    </div>
+    <nav>
+      <button onclick="location.href='mapa.html'">Mapa</button>
+      <button onclick="location.href='menu.html'">Menú</button>
+    </nav>
+  </header>
+
+  <main class="encuesta">
+    <section class="intro">
+      <h1>Construye tu ruta</h1>
+      <p>Responde rápido y te mostramos los mejores lugares en el mapa según tus gustos.</p>
+    </section>
+
+    <section class="pregunta">
+      <h2>¿En qué zona de Bogotá buscas?</h2>
+      <div class="opciones" data-group="zona">
+        <button class="pill" data-group="zona" data-value="norte">Norte</button>
+        <button class="pill" data-group="zona" data-value="centro">Centro</button>
+        <button class="pill" data-group="zona" data-value="sur">Sur</button>
+        <button class="pill" data-group="zona" data-value="toda">Toda</button>
+      </div>
+    </section>
+
+    <section class="pregunta">
+      <h2>¿En qué rango de precio estás buscando tu comida típica bogotana?</h2>
+      <div class="opciones">
+        <button class="pill" data-group="precio" data-value="economico">Económico (hasta $15.000)</button>
+        <button class="pill" data-group="precio" data-value="medio">Medio ($15.000 - $30.000)</button>
+        <button class="pill" data-group="precio" data-value="premium">Péremium ($30.000 - $50.000)</button>
+        <button class="pill" data-group="precio" data-value="gourmet">Gourmet / Especial (más de $50.000)</button>
+        <button class="pill" data-group="precio" data-value="cualquier">Cualquier rango</button>
+      </div>
+    </section>
+
+    <section class="pregunta">
+      <h2>¿Ya sabes qué plato típico comer?</h2>
+      <div class="opciones">
+        <button class="pill" data-group="plato" data-value="si">Sí</button>
+        <button class="pill" data-group="plato" data-value="no">No</button>
+      </div>
+    </section>
+
+    <section class="pregunta">
+      <h2>¿Para qué momento del día buscas comida típica?</h2>
+      <div class="opciones">
+        <button class="pill" data-group="momento" data-value="desayuno">Desayuno</button>
+        <button class="pill" data-group="momento" data-value="almuerzo">Almuerzo</button>
+        <button class="pill" data-group="momento" data-value="cena">Cena ligera</button>
+        <button class="pill" data-group="momento" data-value="merienda">Merienda</button>
+        <button class="pill" data-group="momento" data-value="cualquier">Cualquiera</button>
+      </div>
+    </section>
+
+    <div class="acciones">
+      <button class="boton-principal" id="btn-enviar">Ver recomendaciones</button>
+      <p class="nota">Tip: si dejas algo en "Cualquier", te mostraremos más opciones.</p>
+    </div>
+  </main>
+
+  <script>
+    const estado = {
+      zona: null,
+      precio: null,
+      plato: null,
+      momento: null,
+    };
+
+    function marcarSeleccion(grupo, valor, boton) {
+      document.querySelectorAll(`[data-group="${grupo}"]`).forEach(b => b.classList.remove("seleccionado"));
+      boton.classList.add("seleccionado");
+      estado[grupo] = valor;
+    }
+
+    document.querySelectorAll("[data-group]").forEach(boton => {
+      boton.addEventListener("click", () => {
+        const grupo = boton.dataset.group;
+        const valor = boton.dataset.value;
+        marcarSeleccion(grupo, valor, boton);
+      });
+    });
+
+    document.getElementById("btn-enviar").addEventListener("click", () => {
+      const params = new URLSearchParams({
+        zona: estado.zona || "toda",
+        precio: estado.precio || "cualquier",
+        plato: estado.plato || "cualquiera",
+        momento: estado.momento || "cualquier",
+      });
+      window.location.href = `mapa.html?${params.toString()}`;
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,104 @@
+@font-face {
+  font-family: 'Sergio Trendy';
+  src: url('fonts/SergioTrendy.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  margin: 0;
+  font-family: 'Sergio Trendy', sans-serif;
+  background-color: #ee8b4e;
+  position: relative;
+}
+
+body::before {
+  content: "";
+  position: absolute;
+  top: 120px; /* ← altura del header */
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: url('/imagenes/fondodos.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  z-index: -1;
+}
+
+
+/* --- Sección principal Hero --- */
+.hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 50px 120px 80px 300px; /* ↓ Antes 140px, ahora sube todo */
+  min-height: 75vh;
+  position: relative;
+  z-index: 1;
+}
+
+
+/* --- Bloque de texto --- */
+.hero-texto {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  max-width: 50%;
+  z-index: 2;
+}
+
+.hero-texto h1 {
+  font-size: 6rem;        /* tamaño correcto como tu referencia */
+  line-height: 1.1;
+  margin: 0 0 30px 0;
+  color: #fff;
+  text-shadow: 0px 2px 3px rgba(0,0,0,0.15); /* igual al diseño */
+}
+
+
+/* --- Botón --- */
+
+.boton {
+  display: inline-block; /* ← clave */
+  width: auto;           /* ← clave */
+  background-color: #FFE9C0;
+  color: #7E2024;
+  border: none;
+  border-radius: 40px;
+  padding: 12px 80px;
+  font-size: 2.5rem;
+  cursor: pointer;
+  box-shadow: 0px 4px 6px rgba(0,0,0,0.15);
+}
+
+
+.boton:hover {
+  background-color: #e5d4b8;
+  color: #6d1f1f;
+  text-shadow: 0 0 6px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+.boton span {
+  display: inline-block;
+  transition: transform 0.25s ease;
+  color: inherit;
+}
+
+.boton:hover span {
+  transform: scale(1.1);
+}
+
+/* --- Imagen de Duki --- */
+.hero-img {
+  flex-shrink: 0; /* Evita que Duki se mueva o reduzca */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-img img {
+  width: 500px;
+  height: auto;
+  z-index: 1;
+}

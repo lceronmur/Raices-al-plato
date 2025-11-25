@@ -1,0 +1,62 @@
+/* ----- FUENTE GENERAL ----- */
+body {
+  margin: 0;
+  font-family: 'Sergio Trendy', serif;
+  src: url(/fonts/SergioTrendy.ttf) format('truetype');
+  background-color: #ffffff;
+}
+
+/* ----- HEADER ----- */
+header {
+  display: flex;
+  position: relative;
+  z-index: 10;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fff;
+  padding: 15px 40px;
+}
+
+/* ----- TÍTULO ----- */
+.titulo h1 {
+    font-family: 'Sergio Trendy', serif;
+  color: #a52828; /* rojo vino */
+  font-size: 4rem;
+  margin: 10px;
+}
+
+/* ----- LOGO ----- */
+.logo img {
+  width: 120px;
+  height: 120px;
+}
+
+/* ----- NAVEGACIÓN ----- */
+nav {
+  display: flex;
+  gap: 12px;
+}
+
+/* ----- BOTONES ----- */
+nav button {
+  background-color: #e7ddcb; /* beige */
+  color: #4c2f23; /* marrón oscuro */
+  border: 2px solid #4c2f23;
+  border-radius: 99999px; /* forma de cápsula */
+  padding: 15px 80px;
+  font-size: 1.3rem;
+  font-family: 'Poppins', sans-serif; /* más moderna */
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.25s cubic-bezier(0.25, 1.2, 0.5, 1);
+
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+nav button:hover {
+ background-color: #d8cbb6; /* un poco más oscuro */
+  color: #3b2317;
+  text-shadow: 0 0 6px rgba(0, 0, 0, 0.2); /* resalta texto */
+  transform: scale(1.05); /* crece solo el texto, no el botón */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}

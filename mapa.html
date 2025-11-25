@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Raíces al plato</title>
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="/estilos/header.css">
+  <link rel="stylesheet" href="/estilos/mapa.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <header>
+    <div class="titulo">
+      <h1>Raíces al plato</h1>
+    </div>
+
+    <div class="logo">
+      <a href="index.html">
+        <img src="/imagenes/logo.png" alt="Logo Raíces al Plato">
+      </a>
+    </div>
+
+    <nav>
+      <button onclick="window.location.href='mapa.html'">Mapa</button>
+      <button onclick="window.location.href='menu.html'">Menú</button>
+    </nav>
+  </header>
+
+  <div class="zona-container">
+    <h1 class="title">¿En qué zona de Bogotá buscas?</h1>
+    <p class="sub">Usamos tus respuestas de la guía inicial para ajustar las sugerencias.</p>
+
+    <div class="contenido">
+        <div class="mapa">
+            <img id="mapa-img" src="imagenes/Mapadividido.png" class="mapa-base" alt="Mapa de Bogotá">
+            <div id="mapa-puntos" class="mapa-puntos"></div>
+        </div>
+
+        <div class="botones">
+            <button id="btn-norte" onclick="cambiarZona('norte')">Norte</button>
+            <button id="btn-centro" onclick="cambiarZona('centro')">Centro</button>
+            <button id="btn-sur" onclick="cambiarZona('sur')">Sur</button>
+            <button id="btn-toda" onclick="cambiarZona('toda')">Toda</button>
+        </div>
+    </div>
+
+    <div id="restaurante-detalle" class="detalle" hidden>
+      <div class="detalle-nombre" id="detalle-nombre"></div>
+      <div class="detalle-meta" id="detalle-meta"></div>
+      <div class="detalle-dir" id="detalle-dir"></div>
+      <div class="detalle-momentos" id="detalle-momentos"></div>
+      <a id="detalle-link" class="btn-link" href="#">Ver restaurante</a>
+    </div>
+  </div>
+
+  <section class="filtros-panel">
+    <div class="filtros-resumen" id="filtros-resumen"></div>
+    <button class="boton-reset" onclick="limpiarFiltros()">Limpiar filtros</button>
+  </section>
+
+  <section>
+    <h2 class="title-sec">Restaurantes sugeridos</h2>
+    <div id="restaurantes" class="restaurantes-grid"></div>
+  </section>
+
+<script>
+let RESTAURANTES = [];
+
+const filtros = {
+  zona: "toda",
+  precio: "cualquier",
+  plato: "cualquiera",
+  momento: "cualquier"
+};
+
+function leerFiltros() {
+  const params = new URLSearchParams(window.location.search);
+  filtros.zona = params.get("zona") || "toda";
+  filtros.precio = params.get("precio") || "cualquier";
+  filtros.plato = params.get("plato") || "cualquiera";
+  filtros.momento = params.get("momento") || "cualquier";
+}
+
+function syncURL() {
+  const params = new URLSearchParams(filtros);
+  const nueva = `${window.location.pathname}?${params.toString()}`;
+  window.history.replaceState({}, "", nueva);
+}
+
+function filtrarRestaurantes() {
+  const { zona, precio, plato, momento } = filtros;
+  return RESTAURANTES.filter(r => {
+    const zonaOk = zona === "toda" || r.zona === zona;
+    const precioOk = precio === "cualquier" || r.precio === precio;
+    const momentoOk = momento === "cualquier" || r.momentos.includes(momento);
+    const platoOk = plato !== "si" || r.platoIconico;
+    return zonaOk && precioOk && momentoOk && platoOk;
+  });
+}
+
+function renderRestaurantes() {
+  const contenedor = document.getElementById("restaurantes");
+  const lista = filtrarRestaurantes();
+
+  if (!lista.length) {
+    contenedor.innerHTML = `<div class="empty">No encontramos restaurantes con esos filtros. Prueba cambiarlos.</div>`;
+    document.getElementById("mapa-puntos").innerHTML = "";
+    document.getElementById("restaurante-detalle").hidden = true;
+    return;
+  }
+
+  contenedor.innerHTML = lista.map(r => `
+    <article class="card">
+      <div class="card-title">${r.nombre}</div>
+      <div class="card-meta">
+        <span class="badge">${r.zona}</span>
+        <span class="badge">${r.precio}</span>
+      </div>
+      <p class="card-dir">${r.direccion}</p>
+      <p class="card-momentos">Momentos: ${r.momentos.join(", ")}</p>
+      ${r.platoIconico ? `<p class="card-tip">Platos típicos recomendados</p>` : ``}
+      <div class="card-actions">
+        <a class="btn-link" href="restaurante.html?id=${r.id}">Ver restaurante</a>
+      </div>
+    </article>
+  `).join("");
+
+  renderPuntos(lista);
+}
+
+function renderPuntos(lista) {
+  const cont = document.getElementById("mapa-puntos");
+  cont.innerHTML = "";
+  lista.forEach(r => {
+    const btn = document.createElement("button");
+    const tipoClase = r.tipo === "bebida" ? "punto-bebida" : "punto-comida";
+    btn.className = `punto ${tipoClase}`;
+    btn.style.left = `${r.coord.x}%`;
+    btn.style.top = `${r.coord.y}%`;
+    btn.title = r.nombre;
+    if (r.icon) {
+      btn.style.backgroundImage = `url(${r.icon})`;
+    } else {
+      btn.textContent = r.tipo === "bebida" ? "🥤" : "🍽️";
+    }
+    btn.addEventListener("click", () => mostrarDetalle(r));
+    cont.appendChild(btn);
+  });
+}
+
+function mostrarDetalle(rest) {
+  document.getElementById("detalle-nombre").innerText = rest.nombre;
+  const tipo = rest.tipo === "bebida" ? "Bebidas / Postres" : "Comida típica";
+  document.getElementById("detalle-meta").innerText = `Zona: ${rest.zona} | Precio: ${rest.precio} | ${tipo}`;
+  document.getElementById("detalle-dir").innerText = rest.direccion;
+  document.getElementById("detalle-momentos").innerText = `Momentos: ${rest.momentos.join(", ")}`;
+  const link = document.getElementById("detalle-link");
+  if (link) link.href = `restaurante.html?id=${rest.id}`;
+  document.getElementById("restaurante-detalle").hidden = false;
+}
+
+function renderResumen() {
+  const resumen = document.getElementById("filtros-resumen");
+  resumen.innerHTML = `
+    <span class="tag">Zona: ${filtros.zona}</span>
+    <span class="tag">Precio: ${filtros.precio}</span>
+    <span class="tag">Plato típico: ${filtros.plato}</span>
+    <span class="tag">Momento: ${filtros.momento}</span>
+  `;
+
+  document.querySelectorAll(".botones button").forEach(btn => btn.classList.remove("activo"));
+  const currentBtn = document.getElementById(`btn-${filtros.zona}`);
+  if (currentBtn) currentBtn.classList.add("activo");
+}
+
+function cambiarZona(zona) {
+  filtros.zona = zona;
+  syncURL();
+  renderResumen();
+  renderRestaurantes();
+}
+
+function limpiarFiltros() {
+  filtros.zona = "toda";
+  filtros.precio = "cualquier";
+  filtros.plato = "cualquiera";
+  filtros.momento = "cualquier";
+  syncURL();
+  renderResumen();
+  renderRestaurantes();
+}
+
+async function cargarRestaurantes() {
+  try {
+    const resp = await fetch("/data/restaurantes.json");
+    RESTAURANTES = await resp.json();
+    renderResumen();
+    renderRestaurantes();
+  } catch (e) {
+    console.error("Error cargando restaurantes", e);
+  }
+}
+
+leerFiltros();
+cargarRestaurantes();
+</script>
+
+</body>
+</html>

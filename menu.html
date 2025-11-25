@@ -1,0 +1,158 @@
+ <!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Raíces al plato</title>
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="/estilos/header.css" />
+    <link rel="stylesheet" href="/estilos/menu.css" />
+  <!-- Fuente decorativa similar al diseño -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600&display=swap" rel="stylesheet">
+  <header>
+    <div class="titulo">
+      <h1>Raíces al plato</h1>
+    </div>
+
+   <div class="logo">
+  <a href="index.html">   <!-- 👈 cambia esto por la página que quieras -->
+    <img src="/imagenes/logo.png" alt="Logo Raíces al Plato" />
+  </a>
+</div>
+
+   <nav>
+       <button onclick="irA('mapa.html')">Mapa</button>
+        <button onclick="irA('menu.html')">Menú</button>
+    </nav>
+  </header>
+<body>
+ <div class="subnav">
+Inicio &lt; Completo
+<button class="filter-btn" onclick="irA('menucomida.html')">Comida</button>
+<button class="filter-btn" onclick="irA('menubebida.html')">Bebida</button>
+
+
+<div class="search-box">
+   <i class="fa-solid fa-magnifying-glass"></i>
+    <input id="buscador-menu" type="text" placeholder="Buscar plato..." />
+</div>
+
+</div>
+
+
+<div class="grid">
+<!-- Example Item -->
+<div class="item">
+<img src="/imagenes/hangua.png" alt="Changua" />
+ <button onclick="irA('producto.html?item=changua')">🍲 Changua</button>
+</div>
+
+
+<div class="item">
+<img src="/imagenes/moñona.png" alt="Moñona" />
+<button onclick="irA('producto.html?item=moñona')">🍲 Moñona</button>
+</div>
+
+
+<div class="item">
+<img src="/imagenes/chica.png" alt="Chicha" />
+<button onclick="irA('producto.html?item=chicha')">🍲 Chicha</button>
+</div>
+
+
+<!-- Continúa llenando los demás items exactamente igual -->
+</div>
+<div class="grid">
+<!-- Example Item -->
+<div class="item">
+<img src="/imagenes/chanfaina.png" alt="Chanfaina" />
+<button onclick="irA('producto.html?item=chanfaina')">🍲 Chanfaina</button>
+</div>
+
+
+<div class="item">
+<img src="/imagenes/lechona.png" alt="Lechona" />
+<button onclick="irA('producto.html?item=lechona')">🍲 Lechona</button>
+</div>
+
+
+<div class="item">
+<img src="/imagenes/masato.png" alt="Masato" />
+<button onclick="irA('producto.html?item=masato')">🍲 Masato</button>
+</div>
+
+
+<!-- Continúa llenando los demás items exactamente igual -->
+</div>
+<div class="grid">
+<!-- Example Item -->
+<div class="item">
+<img src="/imagenes/canelazo.png" alt="Canelazo" />
+<button onclick="irA('producto.html?item=canelazo')">🍲 Canelazo</button>
+</div>
+
+
+<div class="item">
+<img src="/imagenes/puchero.png" alt="Puchero" />
+<button onclick="irA('producto.html?item=puchero')">🍲 Puchero</button>
+</div>
+
+
+<div class="item">
+<img src="/imagenes/avena.png" alt="Avena" />
+<button onclick="irA('producto.html?item=avena')">🍲 Avena</button>
+</div>
+
+
+<!-- Continúa llenando los demás items exactamente igual -->
+</div>
+</div>
+<div class="grid">
+<!-- Example Item -->
+<div class="item">
+<img src="/imagenes/ajiaco2.jpeg" alt="Ajiaco" />
+<button onclick="irA('producto.html?item=ajiaco')">🍲 Ajiaco</button>
+</div>
+
+
+<div class="item">
+<img src="/imagenes/tamal.webp" alt="Tamal" />
+<button onclick="irA('producto.html?item=tamal')">🍲 Tamal</button>
+</div>
+
+
+<div class="item">
+<img src="/imagenes/avena.png" alt="Aguapanela" />
+<button onclick="irA('producto.html?item=aguapanela')">🍲 Aguapanela</button>
+</div>
+</div>
+
+
+<div class="bottom-dog">
+<img src="/imagenes/perrofooter.png" alt="Perro" width="500" />
+</div>
+
+
+</body>
+</html>
+<script>
+  function irA(pagina) {
+    window.location.href = pagina;
+  }
+
+  // Búsqueda por nombre de plato
+  const buscador = document.getElementById("buscador-menu");
+  const itemsMenu = Array.from(document.querySelectorAll(".grid .item"));
+
+  const filtrar = (texto) => {
+    const term = texto.trim().toLowerCase();
+    itemsMenu.forEach(card => {
+      const nombre = (card.innerText || "").toLowerCase();
+      card.style.display = term === "" || nombre.includes(term) ? "block" : "none";
+    });
+  };
+
+  buscador.addEventListener("input", (e) => filtrar(e.target.value));
+</script>
