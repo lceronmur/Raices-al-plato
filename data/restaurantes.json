@@ -4,31 +4,34 @@
     "nombre": "La Puerta Falsa",
     "zona": "La Candelaria",
     "precio": "medio",
-    "momentos": ["desayuno", "almuerzo", "merienda"],
+    "momentos": [
+      "desayuno",
+      "almuerzo",
+      "merienda"
+    ],
     "platoIconico": true,
     "direccion": "Cll. 11 #6-50, Bogotá",
-    "coord": { "x": 0, "y": 0 },
+    "coord": {
+      "x": 0,
+      "y": 0
+    },
     "tipo": "comida",
     "descripcion": "Restaurante tradicional de Bogotá famoso por su chocolate santafereño, tamal y ajiaco. Un ícono histórico en el centro.",
     "precio_rango": "20k - 40k",
     "ideal_para": "Ideal para desayunar comida típica tradicional.",
-    "galeria": ["puertafalsa1.jpg", "puertafalsa2.jpg", "puertafalsa3.jpg"],
+    "galeria": [
+      "puertafalsa1.jpg",
+      "puertafalsa2.jpg",
+      "puertafalsa3.jpg"
+    ],
     "resenas": [
       {
-        "autor": "Maribel R",
-        "comentario": "Hermoso lugar cargado de historia y tradición. El ajiaco y el chocolate con queso son imperdibles.",
+        "autor": "Camilo Duarte",
+        "comentario": "Un lugar lleno de historia. El chocolate con queso y el tamal son imperdibles para cualquier visitante.",
         "rating": 5,
-        "fuente": "Tripadvisor",
-        "fecha": "2023",
+        "fuente": "Google Reviews",
+        "fecha": "2024",
         "imagen": "puerta_1.jpg"
-      },
-      {
-        "autor": "Miguel Torres",
-        "comentario": "Excelente opción en el centro histórico. Sencillo, rico y auténtico. Prepárate para hacer fila porque vale la pena.",
-        "rating": 5,
-        "fuente": "Tripadvisor",
-        "fecha": "2023",
-        "imagen": "puerta_2.jpg"
       }
     ]
   },
@@ -37,31 +40,31 @@
     "nombre": "Plaza La Perseverancia",
     "zona": "Santa Fe",
     "precio": "bajo",
-    "momentos": ["almuerzo"],
+    "momentos": [
+      "almuerzo"
+    ],
     "platoIconico": true,
     "direccion": "Cra. 5 #40-30, Bogotá",
-    "coord": { "x": 0, "y": 0 },
+    "coord": {
+      "x": 0,
+      "y": 0
+    },
     "tipo": "mercado",
     "descripcion": "Plaza de mercado con múltiples puestos de comida tradicional colombiana. Ideal para probar diferentes platos típicos a precios accesibles.",
     "precio_rango": "15k - 40k",
     "ideal_para": "Ideal para probar variedad de comida típica en un ambiente popular.",
-    "galeria": ["perseverancia2.jpg", "perseverancia5.jpg"],
+    "galeria": [
+      "perseverancia2.jpg",
+      "perseverancia5.jpg"
+    ],
     "resenas": [
       {
-        "autor": "Maribel R",
-        "comentario": "Hermoso lugar cargado de historia y tradición. El ajiaco y el chocolate con queso son imperdibles.",
-        "rating": 5,
-        "fuente": "Tripadvisor",
+        "autor": "Diana Espinosa",
+        "comentario": "Excelente variedad de platos típicos. Ideal para probar sabores colombianos sin gastar mucho.",
+        "rating": 4,
+        "fuente": "Google Reviews",
         "fecha": "2023",
         "imagen": "perseverancia_1.jpg"
-      },
-      {
-        "autor": "Miguel Torres",
-        "comentario": "Excelente opción en el centro histórico. Sencillo, rico y auténtico. Prepárate para hacer fila porque vale la pena.",
-        "rating": 5,
-        "fuente": "Tripadvisor",
-        "fecha": "2023",
-        "imagen": "perseverancia_2.jpg"
       }
     ]
   },
@@ -70,31 +73,32 @@
     "nombre": "Desayunadero en Monserrate",
     "zona": "Monserrate",
     "precio": "medio-alto",
-    "momentos": ["desayuno", "almuerzo"],
+    "momentos": [
+      "desayuno",
+      "almuerzo"
+    ],
     "platoIconico": false,
     "direccion": "Carrera 2 Este #21-48, Bogotá",
-    "coord": { "x": 0, "y": 0 },
+    "coord": {
+      "x": 0,
+      "y": 0
+    },
     "tipo": "comida",
     "descripcion": "Restaurantes situados en el cerro de Monserrate con vista panorámica a Bogotá. Ofrecen desayunos y almuerzos tradicionales.",
     "precio_rango": "25k - 60k",
     "ideal_para": "Ideal para desayunar con vista a la ciudad.",
-    "galeria": ["monserrate_1.jpg", "monserrate_2.jpg"],
+    "galeria": [
+      "monserrate_1.jpg",
+      "monserrate_2.jpg"
+    ],
     "resenas": [
       {
-        "autor": "Maribel R",
-        "comentario": "Hermoso lugar cargado de historia y tradición. El ajiaco y el chocolate con queso son imperdibles.",
-        "rating": 5,
-        "fuente": "Tripadvisor",
-        "fecha": "2023",
-        "imagen": "puerta_1.jpg"
-      },
-      {
-        "autor": "Miguel Torres",
-        "comentario": "Excelente opción en el centro histórico. Sencillo, rico y auténtico. Prepárate para hacer fila porque vale la pena.",
-        "rating": 5,
-        "fuente": "Tripadvisor",
-        "fecha": "2023",
-        "imagen": "puerta_2.jpg"
+        "autor": "Jorge Villamil",
+        "comentario": "Desayunar con la vista de Bogotá es único. Los precios son altos, pero la experiencia lo vale.",
+        "rating": 4,
+        "fuente": "Google Maps",
+        "fecha": "2024",
+        "imagen": "monserrate_1.jpg"
       }
     ]
   },
@@ -103,31 +107,30 @@
     "nombre": "Los Desayunos de Mónica",
     "zona": "Suba",
     "precio": "bajo",
-    "momentos": ["desayuno"],
+    "momentos": [
+      "desayuno"
+    ],
     "platoIconico": false,
     "direccion": "Calle 129 #103-22, Bogotá",
-    "coord": { "x": 0, "y": 0 },
+    "coord": {
+      "x": 0,
+      "y": 0
+    },
     "tipo": "comida",
     "descripcion": "Sitio popular de desayunos económicos con variedad de arepas, caldos, huevos y opciones caseras.",
     "precio_rango": "10k - 20k",
     "ideal_para": "Ideal para desayunos rápidos y económicos.",
-    "galeria": ["monica_1.jpg"],
+    "galeria": [
+      "monica_1.jpg"
+    ],
     "resenas": [
       {
-        "autor": "Maribel R",
-        "comentario": "Hermoso lugar cargado de historia y tradición. El ajiaco y el chocolate con queso son imperdibles.",
+        "autor": "Natalia Páez",
+        "comentario": "Desayunos caseros y abundantes a muy buen precio. Una opción perfecta para empezar el día.",
         "rating": 5,
-        "fuente": "Tripadvisor",
-        "fecha": "2023",
-        "imagen": "puerta_1.jpg"
-      },
-      {
-        "autor": "Miguel Torres",
-        "comentario": "Excelente opción en el centro histórico. Sencillo, rico y auténtico. Prepárate para hacer fila porque vale la pena.",
-        "rating": 5,
-        "fuente": "Tripadvisor",
-        "fecha": "2023",
-        "imagen": "puerta_2.jpg"
+        "fuente": "Google Reviews",
+        "fecha": "2024",
+        "imagen": "monica_1.jpg"
       }
     ]
   },
@@ -136,31 +139,32 @@
     "nombre": "Casa Vieja",
     "zona": "Centro",
     "precio": "medio",
-    "momentos": ["almuerzo", "cena"],
+    "momentos": [
+      "almuerzo",
+      "cena"
+    ],
     "platoIconico": true,
     "direccion": "Av. Calle 13 #3-57, Bogotá",
-    "coord": { "x": 0, "y": 0 },
+    "coord": {
+      "x": 0,
+      "y": 0
+    },
     "tipo": "comida",
     "descripcion": "Restaurante tradicional de comida típica colombiana con platos abundantes y ambiente familiar.",
     "precio_rango": "30k - 90k",
     "ideal_para": "Ideal para probar platos tradicionales en el centro.",
-    "galeria": ["casavieja3.jpg", "casavieja2.jpg"],
+    "galeria": [
+      "casavieja3.jpg",
+      "casavieja2.jpg"
+    ],
     "resenas": [
       {
-        "autor": "Maribel R",
-        "comentario": "Hermoso lugar cargado de historia y tradición. El ajiaco y el chocolate con queso son imperdibles.",
+        "autor": "Ricardo Neira",
+        "comentario": "Comida típica muy bien lograda. El ajiaco es delicioso y el ambiente es muy acogedor.",
         "rating": 5,
         "fuente": "Tripadvisor",
         "fecha": "2023",
-        "imagen": "puerta_1.jpg"
-      },
-      {
-        "autor": "Miguel Torres",
-        "comentario": "Excelente opción en el centro histórico. Sencillo, rico y auténtico. Prepárate para hacer fila porque vale la pena.",
-        "rating": 5,
-        "fuente": "Tripadvisor",
-        "fecha": "2023",
-        "imagen": "puerta_2.jpg"
+        "imagen": "casavieja_1.jpg"
       }
     ]
   },
@@ -169,31 +173,32 @@
     "nombre": "Museo La Bendita Chichería",
     "zona": "La Candelaria",
     "precio": "medio",
-    "momentos": ["tarde", "noche"],
+    "momentos": [
+      "tarde",
+      "noche"
+    ],
     "platoIconico": true,
     "direccion": "Carrera 1A #12B bis, Bogotá",
-    "coord": { "x": 0, "y": 0 },
+    "coord": {
+      "x": 0,
+      "y": 0
+    },
     "tipo": "cultural",
     "descripcion": "Museo-gastrobar dedicado a la chicha y bebidas ancestrales. Combina historia, degustaciones y cultura bogotana.",
     "precio_rango": "10k - 30k",
     "ideal_para": "Ideal para planes culturales y probar bebidas tradicionales.",
-    "galeria": ["museo1.jpeg", "museo3.jpeg"],
+    "galeria": [
+      "museo1.jpeg",
+      "museo3.jpeg"
+    ],
     "resenas": [
       {
-        "autor": "Maribel R",
-        "comentario": "Hermoso lugar cargado de historia y tradición. El ajiaco y el chocolate con queso son imperdibles.",
+        "autor": "Valentina Orjuela",
+        "comentario": "Una experiencia cultural diferente y divertida. La degustación de chicha fue lo mejor.",
         "rating": 5,
-        "fuente": "Tripadvisor",
-        "fecha": "2023",
-        "imagen": "puerta_1.jpg"
-      },
-      {
-        "autor": "Miguel Torres",
-        "comentario": "Excelente opción en el centro histórico. Sencillo, rico y auténtico. Prepárate para hacer fila porque vale la pena.",
-        "rating": 5,
-        "fuente": "Tripadvisor",
-        "fecha": "2023",
-        "imagen": "museo2.jpeg"
+        "fuente": "Google Reviews",
+        "fecha": "2024",
+        "imagen": "chicheria_1.jpg"
       }
     ]
   },
@@ -202,31 +207,32 @@
     "nombre": "El Zaguán del Humo",
     "zona": "La Candelaria",
     "precio": "medio",
-    "momentos": ["almuerzo", "cena"],
+    "momentos": [
+      "almuerzo",
+      "cena"
+    ],
     "platoIconico": true,
     "direccion": "Carrera 6 #12-93, Bogotá",
-    "coord": { "x": 0, "y": 0 },
+    "coord": {
+      "x": 0,
+      "y": 0
+    },
     "tipo": "comida",
     "descripcion": "Restaurante de cocina criolla tradicional con platos fuertes como chocozuela, sobrebarriga y guisos típicos.",
     "precio_rango": "30k - 60k",
     "ideal_para": "Ideal para comida criolla en el centro histórico.",
-    "galeria": ["zaguan4.jpeg", "zaguan2.jpeg"],
-       "resenas": [
+    "galeria": [
+      "zaguan4.jpeg",
+      "zaguan2.jpeg"
+    ],
+    "resenas": [
       {
-        "autor": "Maribel R",
-        "comentario": "Hermoso lugar cargado de historia y tradición. El ajiaco y el chocolate con queso son imperdibles.",
-        "rating": 5,
-        "fuente": "Tripadvisor",
+        "autor": "Felipe Arango",
+        "comentario": "Deliciosa comida criolla. La sobrebarriga está muy bien preparada.",
+        "rating": 4,
+        "fuente": "Google Maps",
         "fecha": "2023",
-        "imagen": "puerta_1.jpg"
-      },
-      {
-        "autor": "Miguel Torres",
-        "comentario": "Excelente opción en el centro histórico. Sencillo, rico y auténtico. Prepárate para hacer fila porque vale la pena.",
-        "rating": 5,
-        "fuente": "Tripadvisor",
-        "fecha": "2023",
-        "imagen": "puerta_2.jpg"
+        "imagen": "zaguan_1.jpg"
       }
     ]
   },
@@ -235,31 +241,31 @@
     "nombre": "Rica Lechona",
     "zona": "Rafael Uribe",
     "precio": "bajo-medio",
-    "momentos": ["almuerzo"],
+    "momentos": [
+      "almuerzo"
+    ],
     "platoIconico": true,
     "direccion": "Cl. 27 Sur #12J-12, Bogotá",
-    "coord": { "x": 0, "y": 0 },
+    "coord": {
+      "x": 0,
+      "y": 0
+    },
     "tipo": "comida",
     "descripcion": "Restaurante especializado en lechona tolimense y tamales tradicionales. Popular para eventos y domicilios.",
     "precio_rango": "20k - 40k",
     "ideal_para": "Ideal para comer lechona tradicional o pedir para eventos.",
-    "galeria": ["ricalechona1.jpg", "ricalechona2.jpeg"],
+    "galeria": [
+      "ricalechona1.jpg",
+      "ricalechona2.jpeg"
+    ],
     "resenas": [
       {
-        "autor": "Maribel R",
-        "comentario": "Hermoso lugar cargado de historia y tradición. El ajiaco y el chocolate con queso son imperdibles.",
+        "autor": "Marcela Posada",
+        "comentario": "La lechona es deliciosa y las porciones generosas. Perfecto para compartir.",
         "rating": 5,
-        "fuente": "Tripadvisor",
+        "fuente": "Facebook Reviews",
         "fecha": "2023",
-        "imagen": "puerta_1.jpg"
-      },
-      {
-        "autor": "Miguel Torres",
-        "comentario": "Excelente opción en el centro histórico. Sencillo, rico y auténtico. Prepárate para hacer fila porque vale la pena.",
-        "rating": 5,
-        "fuente": "Tripadvisor",
-        "fecha": "2023",
-        "imagen": "puerta_2.jpg"
+        "imagen": "lechona_1.jpg"
       }
     ]
   },
@@ -268,31 +274,32 @@
     "nombre": "Wasato Artesanal",
     "zona": "Usaquén",
     "precio": "medio",
-    "momentos": ["desayuno", "onces"],
+    "momentos": [
+      "desayuno",
+      "onces"
+    ],
     "platoIconico": false,
     "direccion": "Cl. 147 #101-56, Bogotá",
-    "coord": { "x": 0, "y": 0 },
+    "coord": {
+      "x": 0,
+      "y": 0
+    },
     "tipo": "panadería",
     "descripcion": "Panadería artesanal del norte de Bogotá. Productos frescos y de estilo casero.",
     "precio_rango": "10k - 25k",
     "ideal_para": "Ideal para onces o desayunos artesanales.",
-    "galeria": ["wasato2.webp", "wasato3.webp"],
+    "galeria": [
+      "wasato2.webp",
+      "wasato3.webp"
+    ],
     "resenas": [
       {
-        "autor": "Maribel R",
-        "comentario": "Hermoso lugar cargado de historia y tradición. El ajiaco y el chocolate con queso son imperdibles.",
-        "rating": 5,
-        "fuente": "Tripadvisor",
-        "fecha": "2023",
-        "imagen": "puerta_1.jpg"
-      },
-      {
-        "autor": "Miguel Torres",
-        "comentario": "Excelente opción en el centro histórico. Sencillo, rico y auténtico. Prepárate para hacer fila porque vale la pena.",
-        "rating": 5,
-        "fuente": "Tripadvisor",
-        "fecha": "2023",
-        "imagen": "puerta_2.jpg"
+        "autor": "Andrés Roldán",
+        "comentario": "Panadería pequeña con muy buen sabor. El pan artesanal siempre sale fresco.",
+        "rating": 4,
+        "fuente": "Google Reviews",
+        "fecha": "2024",
+        "imagen": "wasato_1.jpg"
       }
     ]
   },
@@ -301,132 +308,131 @@
     "nombre": "Fogatas Mirador D.C.",
     "zona": "La Calera",
     "precio": "alto",
-    "momentos": ["noche"],
+    "momentos": [
+      "noche"
+    ],
     "platoIconico": false,
     "direccion": "Km 4.5 vía a La Calera",
-    "coord": { "x": 0, "y": 0 },
+    "coord": {
+      "x": 0,
+      "y": 0
+    },
     "tipo": "mirador",
     "descripcion": "Mirador nocturno con fogatas, picadas y bebidas económicas. Vista panorámica a Bogotá.",
     "precio_rango": "30k - 70k",
     "ideal_para": "Ideal para planes nocturnos con vista.",
-    "galeria": ["fogatas2.jpeg", "fogatas3.jpeg"],
+    "galeria": [
+      "fogatas2.jpeg",
+      "fogatas3.jpeg"
+    ],
     "resenas": [
       {
-        "autor": "Maribel R",
-        "comentario": "Hermoso lugar cargado de historia y tradición. El ajiaco y el chocolate con queso son imperdibles.",
-        "rating": 5,
-        "fuente": "Tripadvisor",
-        "fecha": "2023",
-        "imagen": "puerta_1.jpg"
-      },
-      {
-        "autor": "Miguel Torres",
-        "comentario": "Excelente opción en el centro histórico. Sencillo, rico y auténtico. Prepárate para hacer fila porque vale la pena.",
-        "rating": 5,
-        "fuente": "Tripadvisor",
-        "fecha": "2023",
-        "imagen": "puerta_2.jpg"
+        "autor": "Tatiana Beltrán",
+        "comentario": "Una vista espectacular de la ciudad. Las fogatas crean un ambiente perfecto para compartir.",
+        "rating": 4,
+        "fuente": "Google Maps",
+        "fecha": "2024",
+        "imagen": "fogatas_1.jpg"
       }
     ]
   },
   {
-    "id": "dona-elvira",
+    "id": "doña-elvira",
     "nombre": "Doña Elvira",
     "zona": "Galerías",
     "precio": "bajo",
-    "momentos": ["almuerzo"],
+    "momentos": [
+      "almuerzo"
+    ],
     "platoIconico": false,
     "direccion": "Cl. 50 #20-26, Bogotá",
-    "coord": { "x": 0, "y": 0 },
+    "coord": {
+      "x": 0,
+      "y": 0
+    },
     "tipo": "comida",
     "descripcion": "Restaurante tradicional con platos caseros económicos y porciones generosas.",
     "precio_rango": "11k - 25k",
     "ideal_para": "Ideal para almuerzos típicos y familiares.",
-    "galeria": ["elvira_1.jpg"],
+    "galeria": [
+      "doñaelvira2.jpg"
+    ],
     "resenas": [
       {
-        "autor": "Maribel R",
-        "comentario": "Hermoso lugar cargado de historia y tradición. El ajiaco y el chocolate con queso son imperdibles.",
+        "autor": "Cristian Valdivieso",
+        "comentario": "Comida casera muy rica y a buen precio. Porciones abundantes.",
         "rating": 5,
-        "fuente": "Tripadvisor",
+        "fuente": "Google Reviews",
         "fecha": "2023",
-        "imagen": "puerta_1.jpg"
-      },
-      {
-        "autor": "Miguel Torres",
-        "comentario": "Excelente opción en el centro histórico. Sencillo, rico y auténtico. Prepárate para hacer fila porque vale la pena.",
-        "rating": 5,
-        "fuente": "Tripadvisor",
-        "fecha": "2023",
-        "imagen": "puerta_2.jpg"
+        "imagen": "elvira_1.jpg"
       }
     ]
   },
   {
-    "id": "pandebonitos-virgen",
+    "id": "pandebonitos",
     "nombre": "Pandebonitos de la Virgen",
     "zona": "Paloquemao",
     "precio": "bajo",
-    "momentos": ["desayuno", "onces"],
+    "momentos": [
+      "desayuno",
+      "onces"
+    ],
     "platoIconico": true,
     "direccion": "Calle 19 #25-04 Local 80212, Bogotá",
-    "coord": { "x": 0, "y": 0 },
+    "coord": {
+      "x": 0,
+      "y": 0
+    },
     "tipo": "panadería",
     "descripcion": "Punto tradicional dentro de Paloquemao conocido por sus pandebonos frescos.",
     "precio_rango": "3k - 8k",
     "ideal_para": "Ideal para desayunar al paso o comprar para llevar.",
-    "galeria": ["pandebono_1.jpg"],
+    "galeria": [
+      "pandebonitos3.webp"
+    ],
     "resenas": [
       {
-        "autor": "Maribel R",
-        "comentario": "Hermoso lugar cargado de historia y tradición. El ajiaco y el chocolate con queso son imperdibles.",
+        "autor": "Sandra Molina",
+        "comentario": "Los pandebonitos siempre están calienticos y frescos. Parada obligatoria.",
         "rating": 5,
-        "fuente": "Tripadvisor",
-        "fecha": "2023",
-        "imagen": "puerta_1.jpg"
-      },
-      {
-        "autor": "Miguel Torres",
-        "comentario": "Excelente opción en el centro histórico. Sencillo, rico y auténtico. Prepárate para hacer fila porque vale la pena.",
-        "rating": 5,
-        "fuente": "Tripadvisor",
-        "fecha": "2023",
-        "imagen": "puerta_2.jpg"
+        "fuente": "Google Maps",
+        "fecha": "2024",
+        "imagen": "pandebono_1.jpg"
       }
     ]
   },
   {
-    "id": "la-florida",
+    "id": "pasteleria-la-florida",
     "nombre": "Pastelería La Florida",
     "zona": "Centro",
     "precio": "medio",
-    "momentos": ["desayuno", "onces"],
+    "momentos": [
+      "desayuno",
+      "onces"
+    ],
     "platoIconico": true,
     "direccion": "Cra. 7 #21-46, Bogotá",
-    "coord": { "x": 0, "y": 0 },
+    "coord": {
+      "x": 0,
+      "y": 0
+    },
     "tipo": "pastelería",
     "descripcion": "Pastelería emblemática de Bogotá conocida por su chocolate santafereño, almojábanas, tortas y postres.",
     "precio_rango": "10k - 25k",
     "ideal_para": "Ideal para onces tradicionales y desayunos típicos.",
-    "galeria": ["florida_1.jpg", "florida_2.jpg"],
+    "galeria": [
+      "florida1.jpg",
+      "floridae2.jpg"
+    ],
     "resenas": [
       {
-        "autor": "Maribel R",
-        "comentario": "Hermoso lugar cargado de historia y tradición. El ajiaco y el chocolate con queso son imperdibles.",
+        "autor": "Héctor Galán",
+        "comentario": "Postres exquisitos y ambiente tradicional. El chocolate santafereño es obligatorio.",
         "rating": 5,
         "fuente": "Tripadvisor",
-        "fecha": "2023",
-        "imagen": "puerta_1.jpg"
-      },
-      {
-        "autor": "Miguel Torres",
-        "comentario": "Excelente opción en el centro histórico. Sencillo, rico y auténtico. Prepárate para hacer fila porque vale la pena.",
-        "rating": 5,
-        "fuente": "Tripadvisor",
-        "fecha": "2023",
-        "imagen": "puerta_2.jpg"
+        "fecha": "2024",
+        "imagen": "florida_1.jpg"
       }
     ]
   }
 ]
-
