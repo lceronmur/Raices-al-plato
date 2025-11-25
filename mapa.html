@@ -20,7 +20,7 @@
 
     <div class="logo">
       <a href="index.html">
-        <img src="/imagenes/logo.png" alt="Logo Raíces al Plato">
+        <img src="imagenes/logo.png" alt="Logo Raíces al Plato">
       </a>
     </div>
 
@@ -196,7 +196,7 @@ function limpiarFiltros() {
 
 async function cargarRestaurantes() {
   try {
-    const resp = await fetch("/data/restaurantes.json");
+    const resp = await fetch("data/restaurantes.json");
     RESTAURANTES = await resp.json();
     renderResumen();
     renderRestaurantes();
