@@ -2,7 +2,7 @@
   {
     "id": "puerta-falsa",
     "nombre": "La Puerta Falsa",
-    "zona": "La Candelaria",
+    "zona": "centro",
     "precio": "medio",
     "momentos": [
       "desayuno",
@@ -12,8 +12,8 @@
     "platoIconico": true,
     "direccion": "Cll. 11 #6-50, Bogotá",
     "coord": {
-      "x": 0,
-      "y": 0
+      "x":65,
+      "y":30
     },
     "tipo": "comida",
     "descripcion": "Restaurante tradicional de Bogotá famoso por su chocolate santafereño, tamal y ajiaco. Un ícono histórico en el centro.",
@@ -38,7 +38,7 @@
   {
     "id": "perseverancia",
     "nombre": "Plaza La Perseverancia",
-    "zona": "Santa Fe",
+    "zona": "centro",
     "precio": "bajo",
     "momentos": [
       "almuerzo"
@@ -46,8 +46,8 @@
     "platoIconico": true,
     "direccion": "Cra. 5 #40-30, Bogotá",
     "coord": {
-      "x": 0,
-      "y": 0
+      "x": 60,
+      "y": 30
     },
     "tipo": "mercado",
     "descripcion": "Plaza de mercado con múltiples puestos de comida tradicional colombiana. Ideal para probar diferentes platos típicos a precios accesibles.",
@@ -71,7 +71,7 @@
   {
     "id": "monserrate",
     "nombre": "Desayunadero en Monserrate",
-    "zona": "Monserrate",
+    "zona": "centro",
     "precio": "medio-alto",
     "momentos": [
       "desayuno",
@@ -80,16 +80,15 @@
     "platoIconico": false,
     "direccion": "Carrera 2 Este #21-48, Bogotá",
     "coord": {
-      "x": 0,
-      "y": 0
+      "x":60,
+      "y": 20
     },
     "tipo": "comida",
     "descripcion": "Restaurantes situados en el cerro de Monserrate con vista panorámica a Bogotá. Ofrecen desayunos y almuerzos tradicionales.",
     "precio_rango": "25k - 60k",
     "ideal_para": "Ideal para desayunar con vista a la ciudad.",
     "galeria": [
-      "monserrate_1.jpg",
-      "monserrate_2.jpg"
+      "monserrate1.jpg"
     ],
     "resenas": [
       {
@@ -105,7 +104,7 @@
   {
     "id": "monica",
     "nombre": "Los Desayunos de Mónica",
-    "zona": "Suba",
+    "zona": "norte",
     "precio": "bajo",
     "momentos": [
       "desayuno"
@@ -113,15 +112,15 @@
     "platoIconico": false,
     "direccion": "Calle 129 #103-22, Bogotá",
     "coord": {
-      "x": 0,
-      "y": 0
+      "x": 20,
+      "y": 40
     },
     "tipo": "comida",
     "descripcion": "Sitio popular de desayunos económicos con variedad de arepas, caldos, huevos y opciones caseras.",
     "precio_rango": "10k - 20k",
     "ideal_para": "Ideal para desayunos rápidos y económicos.",
     "galeria": [
-      "monica_1.jpg"
+      "monica1.jpg"
     ],
     "resenas": [
       {
@@ -137,7 +136,7 @@
   {
     "id": "casa-vieja",
     "nombre": "Casa Vieja",
-    "zona": "Centro",
+    "zona": "centro",
     "precio": "medio",
     "momentos": [
       "almuerzo",
@@ -146,8 +145,8 @@
     "platoIconico": true,
     "direccion": "Av. Calle 13 #3-57, Bogotá",
     "coord": {
-      "x": 0,
-      "y": 0
+      "x": 69,
+      "y": 35
     },
     "tipo": "comida",
     "descripcion": "Restaurante tradicional de comida típica colombiana con platos abundantes y ambiente familiar.",
@@ -171,7 +170,7 @@
   {
     "id": "chicheria",
     "nombre": "Museo La Bendita Chichería",
-    "zona": "La Candelaria",
+    "zona": "centro",
     "precio": "medio",
     "momentos": [
       "tarde",
@@ -180,8 +179,8 @@
     "platoIconico": true,
     "direccion": "Carrera 1A #12B bis, Bogotá",
     "coord": {
-      "x": 0,
-      "y": 0
+      "x": 67,
+      "y": 38
     },
     "tipo": "cultural",
     "descripcion": "Museo-gastrobar dedicado a la chicha y bebidas ancestrales. Combina historia, degustaciones y cultura bogotana.",
@@ -205,7 +204,7 @@
   {
     "id": "zaguan",
     "nombre": "El Zaguán del Humo",
-    "zona": "La Candelaria",
+    "zona": "centro",
     "precio": "medio",
     "momentos": [
       "almuerzo",
@@ -214,16 +213,16 @@
     "platoIconico": true,
     "direccion": "Carrera 6 #12-93, Bogotá",
     "coord": {
-      "x": 0,
-      "y": 0
+      "x": 58,
+      "y": 35
     },
     "tipo": "comida",
     "descripcion": "Restaurante de cocina criolla tradicional con platos fuertes como chocozuela, sobrebarriga y guisos típicos.",
     "precio_rango": "30k - 60k",
     "ideal_para": "Ideal para comida criolla en el centro histórico.",
     "galeria": [
-      "zaguan4.jpeg",
-      "zaguan2.jpeg"
+      "zaguan1.jpg",
+      "zaguan2.jpg"
     ],
     "resenas": [
       {
@@ -239,7 +238,7 @@
   {
     "id": "lechona-rica",
     "nombre": "Rica Lechona",
-    "zona": "Rafael Uribe",
+    "zona": "sur",
     "precio": "bajo-medio",
     "momentos": [
       "almuerzo"
@@ -247,16 +246,15 @@
     "platoIconico": true,
     "direccion": "Cl. 27 Sur #12J-12, Bogotá",
     "coord": {
-      "x": 0,
-      "y": 0
+      "x": 70,
+      "y":55
     },
     "tipo": "comida",
     "descripcion": "Restaurante especializado en lechona tolimense y tamales tradicionales. Popular para eventos y domicilios.",
     "precio_rango": "20k - 40k",
     "ideal_para": "Ideal para comer lechona tradicional o pedir para eventos.",
     "galeria": [
-      "ricalechona1.jpg",
-      "ricalechona2.jpeg"
+      "ricalechona1.jpg"
     ],
     "resenas": [
       {
@@ -272,7 +270,7 @@
   {
     "id": "masato-artesanal",
     "nombre": "Wasato Artesanal",
-    "zona": "Usaquén",
+    "zona": "norte",
     "precio": "medio",
     "momentos": [
       "desayuno",
@@ -281,8 +279,8 @@
     "platoIconico": false,
     "direccion": "Cl. 147 #101-56, Bogotá",
     "coord": {
-      "x": 0,
-      "y": 0
+      "x": 25,
+      "y": 30
     },
     "tipo": "panadería",
     "descripcion": "Panadería artesanal del norte de Bogotá. Productos frescos y de estilo casero.",
@@ -306,7 +304,7 @@
   {
     "id": "fogatas-mirador-dc",
     "nombre": "Fogatas Mirador D.C.",
-    "zona": "La Calera",
+    "zona": "norte",
     "precio": "alto",
     "momentos": [
       "noche"
@@ -314,16 +312,16 @@
     "platoIconico": false,
     "direccion": "Km 4.5 vía a La Calera",
     "coord": {
-      "x": 0,
-      "y": 0
+      "x": 45,
+      "y": 8
     },
     "tipo": "mirador",
     "descripcion": "Mirador nocturno con fogatas, picadas y bebidas económicas. Vista panorámica a Bogotá.",
     "precio_rango": "30k - 70k",
     "ideal_para": "Ideal para planes nocturnos con vista.",
     "galeria": [
-      "fogatas2.jpeg",
-      "fogatas3.jpeg"
+      "fogata4.webp",
+      "fogata.jpg"
     ],
     "resenas": [
       {
@@ -339,7 +337,7 @@
   {
     "id": "doña-elvira",
     "nombre": "Doña Elvira",
-    "zona": "Galerías",
+    "zona": "centro",
     "precio": "bajo",
     "momentos": [
       "almuerzo"
@@ -347,8 +345,8 @@
     "platoIconico": false,
     "direccion": "Cl. 50 #20-26, Bogotá",
     "coord": {
-      "x": 0,
-      "y": 0
+      "x": 45,
+      "y": 25
     },
     "tipo": "comida",
     "descripcion": "Restaurante tradicional con platos caseros económicos y porciones generosas.",
@@ -371,7 +369,7 @@
   {
     "id": "pandebonitos",
     "nombre": "Pandebonitos de la Virgen",
-    "zona": "Paloquemao",
+    "zona": "centro",
     "precio": "bajo",
     "momentos": [
       "desayuno",
@@ -380,8 +378,8 @@
     "platoIconico": true,
     "direccion": "Calle 19 #25-04 Local 80212, Bogotá",
     "coord": {
-      "x": 0,
-      "y": 0
+      "x": 59,
+      "y": 39
     },
     "tipo": "panadería",
     "descripcion": "Punto tradicional dentro de Paloquemao conocido por sus pandebonos frescos.",
@@ -404,7 +402,7 @@
   {
     "id": "pasteleria-la-florida",
     "nombre": "Pastelería La Florida",
-    "zona": "Centro",
+    "zona": "centro",
     "precio": "medio",
     "momentos": [
       "desayuno",
@@ -413,8 +411,8 @@
     "platoIconico": true,
     "direccion": "Cra. 7 #21-46, Bogotá",
     "coord": {
-      "x": 0,
-      "y": 0
+      "x": 57,
+      "y": 30
     },
     "tipo": "pastelería",
     "descripcion": "Pastelería emblemática de Bogotá conocida por su chocolate santafereño, almojábanas, tortas y postres.",
@@ -422,7 +420,7 @@
     "ideal_para": "Ideal para onces tradicionales y desayunos típicos.",
     "galeria": [
       "florida1.jpg",
-      "floridae2.jpg"
+      "florida2.jpg"
     ],
     "resenas": [
       {

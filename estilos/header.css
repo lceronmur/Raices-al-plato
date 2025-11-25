@@ -1,8 +1,7 @@
 /* ----- FUENTE GENERAL ----- */
 body {
   margin: 0;
-  font-family: 'Sergio Trendy', serif;
-  src: url(/fonts/SergioTrendy.ttf) format('truetype');
+  font-family: 'Alfa Slab One';
   background-color: #ffffff;
 }
 
@@ -19,7 +18,7 @@ header {
 
 /* ----- TÍTULO ----- */
 .titulo h1 {
-    font-family: 'Sergio Trendy', serif;
+    font-family: 'Alfa Slab One';
   color: #a52828; /* rojo vino */
   font-size: 4rem;
   margin: 10px;
