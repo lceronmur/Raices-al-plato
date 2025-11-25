@@ -60,8 +60,8 @@
     "tipo": "comida"
   },
   {
-    "id": "fogon-capital",
-    "nombre": "Fogón Capital",
+    "id": "monserrate",
+    "nombre": "Desayunadero en Monserrate",
     "zona": "norte",
     "precio": "premium",
     "momentos": ["cena", "almuerzo"],
